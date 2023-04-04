@@ -1,0 +1,199 @@
+
+/*----------------------------------------------Main----*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--font);
+    scroll-behavior: smooth;
+}
+p,h1,h2,h3,h4,h5,h6{
+    pointer-events: none;
+}
+/*-----------------------------------------------Color--------*/
+
+:root{
+    --bg : #000;
+    --font : #fdf4dc;
+    --main : #1F51FF;
+    --btn : #A56032;
+    --fontT : #fdf4dc10;
+}
+
+
+/*-------------------------------------------------Universal-----------*/
+
+body{
+    width: 100%;
+    background-color: var(--bg);
+}
+p{ font-size: 30%;}
+h6{font-size: 40%;}
+
+
+/*------------------------------------------------------------Main Section*/
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    
+    
+    
+}
+
+.logo h1{
+    font-size: 40%;
+    color: var(--btn);
+    border-radius: 5px;
+    
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 5px;
+    margin: 10px;
+    text-transform: uppercase;
+    font-family: 'Yellowtail', cursive;
+}
+
+.lamp,.boy,.title{
+    position: absolute;
+}
+
+.lamp{
+    width: 15%;
+    height: auto;
+    top: 0;
+    z-index: 4;
+}
+
+.boy{
+    width: 20%;
+    height: auto;
+    bottom: 0;
+    z-index: 5;
+}
+
+.title{
+    text-align: center;
+    padding: 5px;
+    top: 27%;
+    white-space: nowrap;
+    z-index: 2;
+    
+}
+
+.main-btn{
+    position: absolute;
+    top: 40%;
+    
+}
+.main-btn a{
+    font-size: 35%;
+    text-decoration: none;
+    text-transform: lowercase;
+    background-color: var(--btn);
+    border: 1px solid var(--btn);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--font);
+    transition: 0.25s;
+    white-space: nowrap;
+}
+
+.main-btn a:hover{
+    border: 1px solid var(--btn);
+    background-color: var(--bg);
+    color: var(--font);
+}
+
+.contents{
+    
+    margin: 20px;
+    padding: 20px;
+}
+
+/*----------------------------------------------Purpose Section--------------*/
+
+.purpose{
+    width: 100%;
+    
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.purpose-container{
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px 15px 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #a5603227;
+    box-shadow: 10px 10px 15px 0px var(--fontT);
+}
+
+.purpose-contents{
+    margin-bottom: 15px;
+    margin-top: 10px;
+    
+
+}
+.purpose-contents p{
+    padding: 5px 20px;
+    margin: 0 25px;
+    line-height: 25px
+
+}
+
+.creatorp{
+    
+    font-style: italic;
+    float: right;
+}
+
+
+
+
+
+
+/*=================================== Responsive ==============================*/
+
+@media screen and (max-width:480px) {
+    .boy{
+        width: 60%;
+    }
+    .lamp{
+        width: 40%;
+    }
+    .logo h1{
+        font-size: 25%;
+    }
+
+    .title{
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .boy{
+        width: 65%;
+    }
+    .lamp{
+        width: 45%;
+    }
+}

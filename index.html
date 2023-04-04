@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Root Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300&family=Yellowtail&display=swap" rel="stylesheet">
+
+</head> 
+<body>
+    <section class="main">
+        <!-- <div class="logo">
+            <h1>KK</h1>
+        </div> -->
+        <img class="lamp" id="lamp" src="imgs/13478 [Converted].png" alt="">
+        <img class="boy" id="boy" src="imgs/4877367.png" alt="">
+        <h1 class="title" id="title" >Testing page not Responsive</h1>
+        <div class="main-btn" id="main-btn" >
+            <a href="#con">Click me to go down</a>
+        </div>
+    </section>
+    <div class="purpose"  id="con">
+        <div class="purpose-container">
+            <div class="purpose-contents">
+                <h6>The purpose of this page</h6>
+            </div>
+            <div class="purpose-contents">
+                <p>
+                    Just testing parallax effect with HTML5 CSS3 and JSES6.......This is not responsive page tho..
+                    <br> Thanks Ya!!!
+                </p>
+                <p class="creatorp">-from creator</p>
+            </div>
+        </div>
+    </div>
+    <div class="contents">
+        <h6>Content</h6>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, quis enim nisi quidem iste perspiciatis accusamus facilis, explicabo voluptatum eveniet pariatur consequuntur sed? Enim quibusdam esse labore. Quo, sequi quisquam.</p>
+    </div>
+    <div class="contents">
+        <h6>Content</h6>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, dolorem? Veniam itaque iure voluptas sapiente accusantium impedit? Aliquam accusantium dicta aut animi atque, quod veniam expedita eaque ducimus sapiente velit.</p>
+    </div>
+    <div class="contents">
+        <h6>Content</h6>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, dolorem? Veniam itaque iure voluptas sapiente accusantium impedit? Aliquam accusantium dicta aut animi atque, quod veniam expedita eaque ducimus sapiente velit.</p>
+    </div>
+    <div class="contents">
+        <h6>Content</h6>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, dolorem? Veniam itaque iure voluptas sapiente accusantium impedit? Aliquam accusantium dicta aut animi atque, quod veniam expedita eaque ducimus sapiente velit.</p>
+    </div>
+    <div class="contents">
+        <h6>Content</h6>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, dolorem? Veniam itaque iure voluptas sapiente accusantium impedit? Aliquam accusantium dicta aut animi atque, quod veniam expedita eaque ducimus sapiente velit.</p>
+    </div>
+    <div class="contents">
+        <h6>Content</h6>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, dolorem? Veniam itaque iure voluptas sapiente accusantium impedit? Aliquam accusantium dicta aut animi atque, quod veniam expedita eaque ducimus sapiente velit.</p>
+    </div>
+    <div class="contents">
+        <h6>Content</h6>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, dolorem? Veniam itaque iure voluptas sapiente accusantium impedit? Aliquam accusantium dicta aut animi atque, quod veniam expedita eaque ducimus sapiente velit.</p>
+    </div>
+    <script>
+        let lamp = document.getElementById('lamp');
+        let boy = document.getElementById('boy');
+        let title = document.getElementById('title');
+        let mainBtn = document.getElementById("main-btn");
+
+    window.addEventListener('scroll', function(){
+
+        
+        let value = window.scrollY;
+        boy.style.bottom = value *0.5 + 'px';
+        lamp.style.top = value *0.3 + 'px';
+        title.style.marginRight = value *2 + "px";
+        mainBtn.style.marginLeft = value *2 + 'px';
+    })
+    </script>
+</body>
+</html>
