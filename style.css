@@ -29,8 +29,11 @@ body{
     width: 100%;
     background-color: var(--bg);
 }
-p{ font-size: 30%;}
-h6{font-size: 40%;}
+p{ 
+    font-size: 45%;
+    line-height: 25px;
+}
+h6{font-size: 60%;}
 
 
 /*------------------------------------------------------------Main Section*/
@@ -117,7 +120,7 @@ h6{font-size: 40%;}
 }
 
 .contents{
-    
+    text-align: center;
     margin: 20px;
     padding: 20px;
 }
@@ -174,6 +177,10 @@ h6{font-size: 40%;}
 /*=================================== Responsive ==============================*/
 
 @media screen and (max-width:480px) {
+
+    p{ font-size: 30%;}
+    h6{font-size: 40%;}
+    
     .boy{
         width: 60%;
     }
